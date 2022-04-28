@@ -1,0 +1,349 @@
+In file included from /Users/niels/esp/esp-idf/examples/ESP32-CAM/main/main.cpp:35:
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/sensors/ei_analogsensor.h:51:1: warning: missing initializer for member 'ei_device_fusion_sensor_t::axis_flag_used' [-Wmissing-field-initializers]
+ };
+ ^
+In file included from /Users/niels/esp/esp-idf/examples/ESP32-CAM/main/main.cpp:29:
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/espressif_esp32/ei_device_espressif_esp32.h:113:13: warning: 'bool read_sample_buffer(size_t, size_t, void (*)(uint8_t*, size_t))' declared 'static' but never defined [-Wunused-function]
+ static bool read_sample_buffer(size_t begin, size_t length, void (*data_fn)(uint8_t *, size_t));
+             ^~~~~~~~~~~~~~~~~~
+[826/1251] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/__/firmware-sdk/ei_fusion.cpp.obj
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_fusion.cpp:65:13: warning: 'void create_fusion_list(int, int, int, bool*, int, uint32_t)' declared 'static' but never defined [-Wunused-function]
+ static void create_fusion_list(
+             ^~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_fusion.cpp: In function 'bool ei_connect_fusion_list(const char*, ei_fusion_list_format)':
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_fusion.cpp:124:12: warning: 'char* strncpy(char*, const char*, size_t)' output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
+     strncpy(input_string, input_list, strlen(input_list));
+     ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[827/1251] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/__/edge-impulse/ingestion-sdk-platform/espressif_esp32/ei_device_espressif_esp32.cpp.obj
+In file included from /Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/espressif_esp32/ei_device_espressif_esp32.cpp:24:
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/espressif_esp32/ei_device_espressif_esp32.h:113:13: warning: 'bool read_sample_buffer(size_t, size_t, void (*)(uint8_t*, size_t))' declared 'static' but never defined [-Wunused-function]
+ static bool read_sample_buffer(size_t begin, size_t length, void (*data_fn)(uint8_t *, size_t));
+             ^~~~~~~~~~~~~~~~~~
+In file included from /Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/espressif_esp32/ei_device_espressif_esp32.cpp:32:
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/sensors/ei_microphone.h:41:12: warning: 'int i2s_init(uint32_t)' declared 'static' but never defined [-Wunused-functio]
+ static int i2s_init(uint32_t sampling_rate);
+            ^~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/sensors/ei_microphone.h:42:12: warning: 'int i2s_deinit()' declared 'static' but never defined [-Wunused-function]
+ static int i2s_deinit(void);
+            ^~~~~~~~~~
+In file included from /Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/espressif_esp32/ei_device_espressif_esp32.h:28,
+                 from /Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/espressif_esp32/ei_device_espressif_esp32.cpp:24:
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h: In member function 'virtual bool EiDeviceInfo::save_config()':
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:124:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.wifi_ssid, wifi_ssid.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:125:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.wifi_password, wifi_password.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:129:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.sample_label, sample_label.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:130:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 33 equals destination size [-Wstringop-truncation]
+         strncpy(buf.sample_hmac_key, sample_hmac_key.c_str(), 33);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:131:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.upload_host, upload_host.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:132:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.upload_path, upload_path.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:133:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.upload_api_key, upload_api_key.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:134:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.mgmt_url, management_url.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[828/1251] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/__/edge-impulse/ingestion-sdk-platform/espressif_esp32/ei_at_handlers.cpp.obj
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/espressif_esp32/ei_at_handlers.cpp: In function 'bool at_get_sample_settings()':
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/espressif_esp32/ei_at_handlers.cpp:152:15: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'uint32_t' {aka 'unsigned int'} [-Wformat=]
+     ei_printf("Length:    %lu ms.\n", dev->get_sample_length_ms());
+               ^~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/espressif_esp32/ei_at_handlers.cpp: In function 'bool at_get_config()':
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/espressif_esp32/ei_at_handlers.cpp:455:15: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'uint32_t' {aka 'unsigned int'} [-Wformat=]
+     ei_printf("Data Transfer Baudrate: %lu\n", dev->get_data_output_baudrate());
+               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/espressif_esp32/ei_at_handlers.cpp:507:15: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'uint32_t' {aka 'unsigned int'} [-Wformat=]
+     ei_printf("Length:    %lu ms.\n", dev->get_sample_length_ms());
+               ^~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/espressif_esp32/ei_at_handlers.h:27,
+                 from /Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/espressif_esp32/ei_at_handlers.cpp:23:
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/espressif_esp32/ei_device_espressif_esp32.h: At global scope:
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/espressif_esp32/ei_device_espressif_esp32.h:113:13: warning: 'bool read_sample_buffer(size_t, size_t, void (*)(uint8_t*, size_t))' declared 'static' but never defined [-Wunused-function]
+ static bool read_sample_buffer(size_t begin, size_t length, void (*data_fn)(uint8_t *, size_t));
+             ^~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/espressif_esp32/ei_at_handlers.cpp:46:13: warning: 'void at_error_not_implemented()' defined but not used [-Wunused-function]
+ static void at_error_not_implemented()
+             ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/espressif_esp32/ei_device_espressif_esp32.h:28,
+                 from /Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/espressif_esp32/ei_at_handlers.h:27,
+                 from /Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/espressif_esp32/ei_at_handlers.cpp:23:
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h: In member function 'virtual bool EiDeviceInfo::save_config()':
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:124:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.wifi_ssid, wifi_ssid.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:125:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.wifi_password, wifi_password.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:129:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.sample_label, sample_label.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:130:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 33 equals destination size [-Wstringop-truncation]
+         strncpy(buf.sample_hmac_key, sample_hmac_key.c_str(), 33);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:131:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.upload_host, upload_host.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:132:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.upload_path, upload_path.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:133:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.upload_api_key, upload_api_key.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:134:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.mgmt_url, management_url.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In member function 'virtual bool EiDeviceInfo::save_config()',
+    inlined from 'virtual void EiDeviceInfo::set_sample_label(std::__cxx11::string)' at /Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:219:20,
+    inlined from 'bool at_set_sample_settings(const char**, int)' at /Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/espressif_esp32/ei_at_handlers.cpp:165:26,
+    inlined from 'bool at_set_sample_settings(const char**, int)' at /Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/espressif_esp32/ei_at_handlers.cpp:158:6:
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:124:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.wifi_ssid, wifi_ssid.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:125:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.wifi_password, wifi_password.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:129:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.sample_label, sample_label.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:130:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 33 equals destination size [-Wstringop-truncation]
+         strncpy(buf.sample_hmac_key, sample_hmac_key.c_str(), 33);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:131:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.upload_host, upload_host.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:132:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.upload_path, upload_path.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:133:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.upload_api_key, upload_api_key.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:134:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.mgmt_url, management_url.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In member function 'virtual bool EiDeviceInfo::save_config()',
+    inlined from 'virtual void EiDeviceInfo::set_sample_interval_ms(float)' at /Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:231:20,
+    inlined from 'bool at_set_sample_settings(const char**, int)' at /Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/espressif_esp32/ei_at_handlers.cpp:169:32,
+    inlined from 'bool at_set_sample_settings(const char**, int)' at /Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/espressif_esp32/ei_at_handlers.cpp:158:6:
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:124:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.wifi_ssid, wifi_ssid.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:125:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.wifi_password, wifi_password.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:129:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.sample_label, sample_label.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:130:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 33 equals destination size [-Wstringop-truncation]
+         strncpy(buf.sample_hmac_key, sample_hmac_key.c_str(), 33);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:131:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.upload_host, upload_host.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:132:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.upload_path, upload_path.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:133:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.upload_api_key, upload_api_key.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:134:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.mgmt_url, management_url.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In member function 'virtual bool EiDeviceInfo::save_config()',
+    inlined from 'virtual void EiDeviceInfo::set_sample_length_ms(uint32_t)' at /Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:243:20,
+    inlined from 'bool at_set_sample_settings(const char**, int)' at /Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/espressif_esp32/ei_at_handlers.cpp:173:30,
+    inlined from 'bool at_set_sample_settings(const char**, int)' at /Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/espressif_esp32/ei_at_handlers.cpp:158:6:
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:124:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.wifi_ssid, wifi_ssid.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:125:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.wifi_password, wifi_password.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:129:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.sample_label, sample_label.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:130:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 33 equals destination size [-Wstringop-truncation]
+         strncpy(buf.sample_hmac_key, sample_hmac_key.c_str(), 33);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:131:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.upload_host, upload_host.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:132:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.upload_path, upload_path.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:133:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.upload_api_key, upload_api_key.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:134:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.mgmt_url, management_url.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In member function 'virtual bool EiDeviceInfo::save_config()',
+    inlined from 'virtual void EiDeviceInfo::set_sample_hmac_key(std::__cxx11::string)' at /Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:207:20,
+    inlined from 'bool at_set_sample_settings(const char**, int)' at /Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/espressif_esp32/ei_at_handlers.cpp:176:33,
+    inlined from 'bool at_set_sample_settings(const char**, int)' at /Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/espressif_esp32/ei_at_handlers.cpp:158:6:
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:124:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.wifi_ssid, wifi_ssid.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:125:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.wifi_password, wifi_password.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:129:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.sample_label, sample_label.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:130:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 33 equals destination size [-Wstringop-truncation]
+         strncpy(buf.sample_hmac_key, sample_hmac_key.c_str(), 33);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:131:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.upload_host, upload_host.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:132:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.upload_path, upload_path.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:133:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.upload_api_key, upload_api_key.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/firmware-sdk/ei_device_info_lib.h:134:16: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 128 equals destination size [-Wstringop-truncation]
+         strncpy(buf.mgmt_url, management_url.c_str(), 128);
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[829/1251] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/__/edge-impulse/ingestion-sdk-platform/sensors/ei_analogsensor.cpp.obj
+In file included from /Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/sensors/ei_analogsensor.cpp:31:
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/sensors/ei_analogsensor.h:51:1: warning: missing initializer for member 'ei_device_fusion_sensor_t::axis_flag_used' [-Wmissing-field-initializers]
+ };
+ ^
+In file included from /Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/sensors/ei_analogsensor.cpp:30:
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/espressif_esp32/ei_device_espressif_esp32.h:113:13: warning: 'bool read_sample_buffer(size_t, size_t, void (*)(uint8_t*, size_t))' declared 'static' but never defined [-Wunused-function]
+ static bool read_sample_buffer(size_t begin, size_t length, void (*data_fn)(uint8_t *, size_t));
+             ^~~~~~~~~~~~~~~~~~
+[833/1251] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/__/edge-impulse/ingestion-sdk-platform/sensors/ei_camera.cpp.obj
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/sensors/ei_camera.cpp:73:1: warning: missing initializer for member 'camera_config_t::fb_location' [-Wmissing-field-initializers]
+ };
+ ^
+[842/1251] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/__/edge-impulse/ingestion-sdk-c/ei_sampler.cpp.obj
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-c/ei_sampler.cpp:74:1: warning: missing initializer for member 'sensor_aq_ctx::cbor_buffer' [-Wmissing-field-initializers]
+ };
+ ^
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-c/ei_sampler.cpp:74:1: warning: missing initializer for member 'sensor_aq_ctx::hash_buffer' [-Wmissing-field-initializers]
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-c/ei_sampler.cpp:74:1: warning: missing initializer for member 'sensor_aq_ctx::encode_context' [-Wmissing-field-initializers]
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-c/ei_sampler.cpp:74:1: warning: missing initializer for member 'sensor_aq_ctx::axis_count' [-Wmissing-field-initializers]
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-c/ei_sampler.cpp:74:1: warning: missing initializer for member 'sensor_aq_ctx::signature_index' [-Wmissing-field-initializers]
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-c/ei_sampler.cpp:74:1: warning: missing initializer for member 'sensor_aq_ctx::stream' [-Wmissing-field-initializers]
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-c/ei_sampler.cpp: In function 'bool ei_sampler_start_sampling(void*, starter_callback, uint32_t)':
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-c/ei_sampler.cpp:167:15: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'uint32_t' {aka 'unsigned int'} [-Wformat=]
+     ei_printf("\tLength: %lu ms.\n", dev->get_sample_length_ms());
+               ^~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-c/ei_sampler.cpp: In function 'bool create_header(sensor_aq_payload_info*)':
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-c/ei_sampler.cpp:301:57: warning: comparison of unsigned expression >= 0 is always true [-Wtype-limits]
+     for (size_t ix = ei_mic_ctx.cbor_buffer.len - 1; ix >= 0; ix--) {
+                                                      ~~~^~~~
+[853/1251] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/__/tflite-model/trained_model_compiled.cpp.obj
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/tflite-model/trained_model_compiled.cpp:1083:51: warning: missing initializer for member 'TfLiteAddParams::pot_scale_int16' [-Wmissing-field-initializers]
+ const TfLiteAddParams opdata10 = { kTfLiteActNone };
+                                                   ^
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/tflite-model/trained_model_compiled.cpp:1106:51: warning: missing initializer for member 'TfLiteAddParams::pot_scale_int16' [-Wmissing-field-initializers]
+ const TfLiteAddParams opdata18 = { kTfLiteActNone };
+                                                   ^
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/tflite-model/trained_model_compiled.cpp:1118:51: warning: missing initializer for member 'TfLiteAddParams::pot_scale_int16' [-Wmissing-field-initializers]
+ const TfLiteAddParams opdata22 = { kTfLiteActNone };
+                                                   ^
+[856/1251] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/__/edge-impulse/ingestion-sdk-platform/sensors/ei_microphone.cpp.obj
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/sensors/ei_microphone.cpp:86:1: warning: missing initializer for member 'sensor_aq_ctx::cbor_buffer' [-Wmissing-field-initializers]
+ };
+ ^
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/sensors/ei_microphone.cpp:86:1: warning: missing initializer for member 'sensor_aq_ctx::hash_buffer' [-Wmissing-field-initializers]
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/sensors/ei_microphone.cpp:86:1: warning: missing initializer for member 'sensor_aq_ctx::encode_context' [-Wmissing-field-initializers]
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/sensors/ei_microphone.cpp:86:1: warning: missing initializer for member 'sensor_aq_ctx::axis_count' [-Wmissing-field-initializers]
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/sensors/ei_microphone.cpp:86:1: warning: missing initializer for member 'sensor_aq_ctx::signature_index' [-Wmissing-field-initializers]
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/sensors/ei_microphone.cpp:86:1: warning: missing initializer for member 'sensor_aq_ctx::stream' [-Wmissing-field-initializers]
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/sensors/ei_microphone.cpp: In function 'void finish_and_upload(char*, uint32_t)':
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/sensors/ei_microphone.cpp:177:15: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'int' [-Wformat=]
+     ei_printf("Not uploading file, not connected to WiFi. Used buffer, from=%lu, to=%lu.\n", 0, current_sample + headerOffset);
+               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/sensors/ei_microphone.cpp:177:15: warning: format '%lu' expects argument of type 'long unsigned int', but argument 3 has type 'uint32_t' {aka 'unsigned int'} [-Wformat=]
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/sensors/ei_microphone.cpp: In function 'bool create_header()':
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/sensors/ei_microphone.cpp:232:57: warning: comparison of unsigned expression >= 0 is always true [-Wtype-limits]
+     for (size_t ix = ei_mic_ctx.cbor_buffer.len - 1; ix >= 0; ix--) {
+                                                      ~~~^~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/sensors/ei_microphone.cpp:247:107: warning: pointer of type 'void *' used in arithmetic [-Wpointer-arith]
+     tr = ei_mic_ctx.signature_ctx->update(ei_mic_ctx.signature_ctx, (uint8_t*)(ei_mic_ctx.cbor_buffer.ptr + end_of_header_ix), ref_size);
+                                                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/sensors/ei_microphone.cpp: In function 'bool ei_microphone_record(uint32_t, uint32_t, bool)':
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/sensors/ei_microphone.cpp:279:19: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'uint32_t' {aka 'unsigned int'} [-Wformat=]
+         ei_printf("Starting in %lu ms... (or until all flash was erased)\n", start_delay_ms);
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/sensors/ei_microphone.cpp: In function 'bool ei_microphone_sample_start()':
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/sensors/ei_microphone.cpp:420:15: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'uint32_t' {aka 'unsigned int'} [-Wformat=]
+     ei_printf("\tLength: %lu ms.\n", dev->get_sample_length_ms());
+               ^~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/sensors/ei_microphone.cpp: In function 'int i2s_init(uint32_t)':
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/sensors/ei_microphone.cpp:525:31: warning: 'I2S_COMM_FORMAT_I2S' is deprecated [-Wdeprecated-declarations]
+       .communication_format = I2S_COMM_FORMAT_I2S,
+                               ^~~~~~~~~~~~~~~~~~~
+In file included from /Users/niels/esp/esp-idf/components/driver/include/driver/i2s.h:16,
+                 from /Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/sensors/ei_microphone.cpp:31:
+/Users/niels/esp/esp-idf/components/hal/include/hal/i2s_types.h:87:5: note: declared here
+     I2S_COMM_FORMAT_I2S       __attribute__((deprecated)) = 0x01, /*!< I2S communication format I2S, correspond to `I2S_COMM_FORMAT_STAND_I2S`*/
+     ^~~~~~~~~~~~~~~~~~~
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/sensors/ei_microphone.cpp:532:3: warning: missing initializer for member 'i2s_driver_config_t::mclk_multiple' [-Wmissing-field-initializers]
+   };
+   ^
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/sensors/ei_microphone.cpp:532:3: warning: missing initializer for member 'i2s_driver_config_t::bits_per_chan' [-Wmissing-field-initializers]
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/sensors/ei_microphone.cpp:538:3: warning: missing initializer for member 'i2s_pin_config_t::mck_io_num' [-Wmissing-field-initializers]
+   };
+   ^
+In file included from /Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/sensors/ei_microphone.cpp:26:
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/espressif_esp32/ei_device_espressif_esp32.h: At global scope:
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/espressif_esp32/ei_device_espressif_esp32.h:113:13: warning: 'bool read_sample_buffer(size_t, size_t, void (*)(uint8_t*, size_t))' declared 'static' but never defined [-Wunused-function]
+ static bool read_sample_buffer(size_t begin, size_t length, void (*data_fn)(uint8_t *, size_t));
+             ^~~~~~~~~~~~~~~~~~
+[900/1251] Building CXX object esp-idf/LIS3DHTR_ESP-IDF/CMakeFiles/__idf_LIS3DHTR_ESP-IDF.dir/src/LIS3DHTR.cpp.obj
+/Users/niels/esp/esp-idf/components/LIS3DHTR_ESP-IDF/src/LIS3DHTR.cpp: In member function 'void LIS3DHTR::begin(uint8_t)':
+/Users/niels/esp/esp-idf/components/LIS3DHTR_ESP-IDF/src/LIS3DHTR.cpp:53:5: warning: missing initializer for member 'i2c_config_t::<anonymous>' [-Wmissing-field-initializers]
+     };
+     ^
+/Users/niels/esp/esp-idf/components/LIS3DHTR_ESP-IDF/src/LIS3DHTR.cpp:53:5: warning: missing initializer for member 'i2c_config_t::clk_flags' [-Wmissing-field-initializers]
+[912/1251] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/__/edge-impulse/inference/ei_run_camera_impulse.cpp.obj
+In file included from /Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse-sdk/dsp/speechpy/speechpy.hpp:27,
+                 from /Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse-sdk/classifier/ei_run_dsp.h:28,
+                 from /Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse-sdk/classifier/ei_run_classifier.h:34,
+                 from /Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/inference/ei_run_camera_impulse.cpp:28:
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse-sdk/dsp/speechpy/feature.hpp: In static member function 'static int ei::speechpy::feature::mfe(ei::matrix_t*, ei::matrix_t*, ei::signal_t*, uint32_t, float, float, uint16_t, uint16_t, uint32_t, uint32_t, uint16_t)':
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse-sdk/dsp/speechpy/feature.hpp:210:52: warning: missing initializer for member 'ei::speechpy::ei_stack_frames_info::frame_ixs' [-Wmissing-field-initializers]
+         stack_frames_info_t stack_frame_info = { 0 };
+                                                    ^
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse-sdk/dsp/speechpy/feature.hpp:210:52: warning: missing initializer for member 'ei::speechpy::ei_stack_frames_info::frame_length' [-Wmissing-field-initializers]
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse-sdk/dsp/speechpy/feature.hpp: In static member function 'static int ei::speechpy::feature::spectrogram(ei::matrix_t*, ei::signal_t*, float, float, float, uint16_t, uint16_t)':
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse-sdk/dsp/speechpy/feature.hpp:346:52: warning: missing initializer for member 'ei::speechpy::ei_stack_frames_info::frame_ixs' [-Wmissing-field-initializers]
+         stack_frames_info_t stack_frame_info = { 0 };
+                                                    ^
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse-sdk/dsp/speechpy/feature.hpp:346:52: warning: missing initializer for member 'ei::speechpy::ei_stack_frames_info::frame_length' [-Wmissing-field-initializers]
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/inference/ei_run_camera_impulse.cpp: In function 'void ei_run_impulse()':
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/inference/ei_run_camera_impulse.cpp:170:38: warning: missing initializer for member 'ei_impulse_result_bounding_box_t::x' [-Wmissing-field-initializers]
+     ei_impulse_result_t result = { 0 };
+                                      ^
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/inference/ei_run_camera_impulse.cpp:170:38: warning: missing initializer for member 'ei_impulse_result_bounding_box_t::y' [-Wmissing-field-initializers]
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/inference/ei_run_camera_impulse.cpp:170:38: warning: missing initializer for member 'ei_impulse_result_bounding_box_t::width' [-Wmissing-field-initializers]
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/inference/ei_run_camera_impulse.cpp:170:38: warning: missing initializer for member 'ei_impulse_result_bounding_box_t::height' [-Wmissing-field-initializers]
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/inference/ei_run_camera_impulse.cpp:170:38: warning: missing initializer for member 'ei_impulse_result_bounding_box_t::value' [-Wmissing-field-initializers]
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/inference/ei_run_camera_impulse.cpp:170:38: warning: missing initializer for member 'ei_impulse_result_t::anomaly' [-Wmissing-field-initializers]
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/inference/ei_run_camera_impulse.cpp:170:38: warning: missing initializer for member 'ei_impulse_result_t::timing' [-Wmissing-field-initializers]
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/inference/ei_run_camera_impulse.cpp:170:38: warning: missing initializer for member 'ei_impulse_result_t::label_detected' [-Wmissing-field-initializers]
+In file included from /Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/inference/ei_run_camera_impulse.cpp:34:
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/espressif_esp32/ei_device_espressif_esp32.h: At global scope:
+/Users/niels/esp/esp-idf/examples/ESP32-CAM/edge-impulse/ingestion-sdk-platform/espressif_esp32/ei_device_espressif_esp32.h:113:13: warning: 'bool read_sample_buffer(size_t, size_t, void (*)(uint8_t*, size_t))' declared 'static' but never defined [-Wunused-function]
+ static bool read_sample_buffer(size_t begin, size_t length, void (*data_fn)(uint8_t *, size_t));
+             ^~~~~~~~~~~~~~~~~~
+[1250/1251] Generating binary image from built executable
+esptool.py v3.2-dev
+Merged 2 ELF sections
+Generated /Users/niels/esp/esp-idf/examples/ESP32-CAM/build/ei_firmware_esp32.bin
+[1251/1251] cd /Users/niels/esp/esp-idf/examples/ESP32-CAM/build/esp-idf/esptool_py && /Users/niel..._table/partition-table.bin /Users/niels/esp/esp-idf/examples/ESP32-CAM/build/ei_firmware_esp32.bi
+ei_firmware_esp32.bin binary size 0xbc4d0 bytes. Smallest app partition is 0x300000 bytes. 0x243b30 bytes (75%) free.
